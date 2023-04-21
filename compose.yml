@@ -5,7 +5,7 @@ services:
     image: hello-world
     ports:
       - target: 80
-        published: 8083
+        published: 8080
         protocol: tcp
         mode: host
     networks:
@@ -16,6 +16,6 @@ networks:
     ipam:
       driver: default
       config:
-        - subnet: 192.168.0.0/24
+        - subnet: 192.168.10.0/32
 
 
